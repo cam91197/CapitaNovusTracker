@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NovusProfileController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="350.0" layoutX="440.0" layoutY="7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../resources/trianglify-background.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" spread="0.6" />
+         </effect>
+      </ImageView>
+      <GridPane hgap="4.0" layoutX="443.0" layoutY="323.0" prefHeight="226.0" prefWidth="348.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="secondLineAddress" editable="false" layoutX="620.0" layoutY="512.0" promptText="2nd Line Address" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="contactNumberLabel" editable="false" layoutX="626.0" layoutY="416.0" promptText="Enter Contact Number" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label layoutX="483.0" layoutY="353.0" text="Novus Start" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="483.0" layoutY="477.0" text="Address" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="thirdLineAddress" editable="false" layoutX="607.0" layoutY="545.0" promptText="3rd Line Address" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label layoutX="483.0" layoutY="384.0" text="Novus Group" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstLineAddress" editable="false" layoutX="626.0" layoutY="478.0" promptText="1st Line Address" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label layoutX="483.0" layoutY="415.0" text="Contact Number" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="483.0" layoutY="446.0" text="Email" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="novusGroupLabel" editable="false" layoutX="626.0" layoutY="385.0" promptText="Enter Group" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="emailLabel" editable="false" layoutX="626.0" layoutY="447.0" promptText="Enter Email" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="fullNameLabel" editable="false" layoutX="626.0" layoutY="323.0" promptText="Enter Name" GridPane.columnIndex="1" />
+            <Label layoutX="483.0" layoutY="322.0" text="Full Name: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="startDate" editable="false" promptText="12/02/1943" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="14.0" text="Placement Details" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <GridPane hgap="4.0" layoutX="14.0" layoutY="41.0" vgap="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="247.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="143.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label layoutX="14.0" layoutY="95.0" text="Placement Start Date" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="41.0" text="Currently Placed At">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="149.0" text="Pay Review Date" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="68.0" text="Office Location" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="176.0" text="Chance Of Contract Renewal" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="122.0" text="Placement End Date" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="currentPlacement" editable="false" layoutX="243.0" layoutY="43.0" promptText="Enter Current Placement" GridPane.columnIndex="1" />
+            <TextField fx:id="officeLocation" editable="false" promptText="Enter Office Location" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="chanceOfRenewal" editable="false" promptText="Chance %" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <DatePicker editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="461.0" text="Qualifications" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="513.0" text="Additional Documents" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ProgressBar layoutX="14.0" layoutY="224.0" prefWidth="200.0" progress="0.66" />
+   </children>
+</AnchorPane>

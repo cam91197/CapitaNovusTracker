@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NovusController">
+   <children>
+      <TableView fx:id="novusTable" layoutY="89.0" prefHeight="480.0" prefWidth="800.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="89.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="150.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="150.0" text="Last Name" />
+            <TableColumn fx:id="novusStreamColumn" prefWidth="150.0" text="Novus Stream" />
+            <TableColumn fx:id="novusGroupColumn" prefWidth="150.0" text="Novus Group" />
+            <TableColumn fx:id="statusColumn" prefWidth="150.0" text="Status" />
+        </columns>
+      </TableView>
+      <HBox layoutX="14.0" layoutY="18.0">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" prefHeight="25.0" prefWidth="36.0" text="Search" textAlignment="CENTER" />
+            <TextField fx:id="searchField" layoutX="84.0" layoutY="18.0" prefHeight="16.0" prefWidth="149.0" promptText="Search Person">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <RadioButton fx:id="showAllRButton" layoutX="237.0" layoutY="22.0" mnemonicParsing="false" text="Show All">
+         <toggleGroup>
+            <ToggleGroup fx:id="novusSelection" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="developersRButton" layoutX="319.0" layoutY="22.0" mnemonicParsing="false" text="Developers" toggleGroup="$novusSelection" />
+      <RadioButton fx:id="testersRButton" layoutX="409.0" layoutY="22.0" mnemonicParsing="false" text="Testers" toggleGroup="$novusSelection" />
+      <RadioButton fx:id="businessAnalystsRButton" layoutX="480.0" layoutY="22.0" mnemonicParsing="false" text="Business Analysts" toggleGroup="$novusSelection" />
+      <HBox layoutX="14.0" layoutY="60.0">
+         <children>
+            <HBox layoutX="14.0" layoutY="60.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="60.0" text="Total Novus : " />
+                  <Label fx:id="totalNovusText" layoutX="87.0" layoutY="60.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox layoutX="112.0" layoutY="60.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="60.0" text="Developers : " />
+                  <Label fx:id="developerCountText" layoutX="87.0" layoutY="60.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox layoutX="209.0" layoutY="60.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="60.0" text="Testers : " />
+                  <Label fx:id="testersCountText" layoutX="87.0" layoutY="60.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox layoutX="292.0" layoutY="60.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="60.0" text="Business Analysts : " />
+                  <Label fx:id="businessAnalystsCountText" layoutX="87.0" layoutY="60.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Button fx:id="showTesters" layoutX="710.0" layoutY="31.0" mnemonicParsing="false" onAction="#addOne" text="add1" />
+      <HBox layoutX="493.0" layoutY="60.0">
+         <children>
+            <Label layoutX="14.0" layoutY="60.0" text="On Bench :" />
+         </children>
+      </HBox>
+      <Label fx:id="novusBenchCountText" layoutX="555.0" layoutY="61.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

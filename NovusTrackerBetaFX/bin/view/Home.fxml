@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="14.0" layoutY="524.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="102.0" text="Log Out" />
+      <VBox layoutX="14.0" layoutY="14.0" />
+      <PieChart fx:id="novusPieChart" layoutX="150.0" layoutY="66.0" legendVisible="false" prefHeight="500.0" prefWidth="500.0" />
+      <Label layoutX="276.0" layoutY="22.0" text="Welcome">
+         <font>
+            <Font size="60.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5e5858" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
